@@ -19,7 +19,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">News</a>
+                <a class="navbar-brand" href="../blog/index.php">News</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -30,7 +30,7 @@
                         ?>
                         <?php foreach ($menu as $value):?>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#"><?=$value["title"]?></a>
+                                <a class="nav-link active" aria-current="page" href="category.php?category_id=<?=$value['id']?>"><?=$value["title"]?></a>
                             </li>
                         <?php endforeach;?>
                     </ul>
