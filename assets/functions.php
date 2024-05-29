@@ -49,3 +49,8 @@
 
         return $category;
     }
+    function delete_new($news_id) {
+        global $conn;
+        $sql = "DELETE from news WHERE id =" .$news_id;
+        $result =mysqli_query($conn, $sql);
+    }
